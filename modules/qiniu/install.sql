@@ -1,0 +1,8 @@
+BEGIN;
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_mode', 'upload', '存储方式', '', 'select', 'local', '{\"local\":\"本地磁盘存储\",\"qiniu\":\"七牛对象存储\"}', '', '', '0', '99');
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_bucket', 'upload', '存储空间名称', '请在七牛云对象存储控制台查询', 'string', '', null, '', '', '0', '98');
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_access_key', 'upload', '密匙AccessKey', '请在七牛云密匙管理查询', 'string', '', null, '', '', '0', '97');
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_secret_key', 'upload', '密匙SecretKey', '请在七牛云密匙管理查询', 'string', '', null, '', '', '0', '96');
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_url', 'upload', '上传地址(存储区域)', '', 'select', 'https://upload.qiniup.com', '{\"https://upload.qiniup.com\":\"华东-浙江 https://upload.qiniup.com\",\"https://upload-cn-east-2.qiniup.com\":\"华东-浙江2 https://upload-cn-east-2.qiniup.com\",\"https://upload-z1.qiniup.com\":\"华北-河北 https://upload-z1.qiniup.com\",\"https://upload-z2.qiniup.com\":\"华南-广东 https://upload-z2.qiniup.com\",\"https://upload-na0.qiniup.com\":\"北美-洛杉矶 https://upload-na0.qiniup.com\",\"https://upload-as0.qiniup.com\":\"亚太-新加坡 https://upload-as0.qiniup.com\",\"https://upload-ap-northeast-1.qiniup.com\":\"亚太-首尔 https://upload-ap-northeast-1.qiniup.com\"}', '', '', '0', '95');
+REPLACE INTO `__PREFIX__config` VALUES (null, 'upload_cdn_url', 'upload', 'CDN地址', '请输入七牛云空间的CDN加速域名，以http(s)://开头', 'string', null, null, '', '', '0', '94');
+COMMIT;

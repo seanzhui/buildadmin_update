@@ -1,0 +1,6 @@
+{
+    "require": {
+        "yansongda/pay": "3.5.2",
+        "hyperf/pimple": "~2.2.0"
+    }
+}
